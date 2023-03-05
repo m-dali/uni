@@ -28,8 +28,15 @@
                             <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
                         @endif
                     @endauth
+        
                 </div>
             @endif
+                <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
+                        <a href="{{ url('/student') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Students</a>
+                        <a href="{{ url('/teacher') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Teachers</a>
+                        <a href="{{ url('/course') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Courses</a>
+        
+                </div>
 
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <div class="flex justify-center">

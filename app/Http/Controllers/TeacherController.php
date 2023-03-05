@@ -12,10 +12,7 @@ class TeacherController extends Controller
     {
         $teachers = Teacher::all();
         return view ('teachers.index')->with('teachers', $teachers);
-        // use Illuminate\Support\Facades\DB;
-        //$users = DB::select('select * from users where active = ?', [1]);
- 
-// return view('user.index', ['users' => $users]);
+
         
     }
 

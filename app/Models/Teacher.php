@@ -13,6 +13,6 @@ class Teacher extends Model
     protected $primaryKey = 'id';
     protected $fillable = ['fullname', 'department', 'mobile'];
     public function students(){
-        return $this->belongsToMany(Student::class,"courses","teacher_id","student_id");
+        return $this->belongsToMany(Student::class,"courses","student_id","teacher_id");
     }
 }

@@ -11,9 +11,5 @@ class Course extends Model
     
     protected $table = 'courses';
     protected $primaryKey = 'id';
-    // protected $fillable = ['name', 'age', 'mobile'];
-
-    public function courses(){
-        return $this->belongsToMany(Teacher::class,"courses");
-    }
+    protected $fillable = ['name', 'student_id', 'teacher_id'];
 }

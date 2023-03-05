@@ -14,6 +14,6 @@ class Student extends Model
     protected $fillable = ['fullname', 'age', 'mobile'];
     public function teachers(): BelongsToMany
     {
-        return $this->belongsToMany(Teacher::class,"courses","student_id","teacher_id");
+        return $this->belongsToMany(Teacher::class,"courses","teacher_id","student_id");
     }
 }

@@ -5,7 +5,10 @@
  
             <div class="col-md-9">
                 <div class="card">
-                    <div class="card-header">Students</div>
+                    <div class="card-header">Students
+                        <a href="{{ url('/teacher') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Teachers</a>
+                        <a href="{{ url('/course') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Courses</a>
+                    </div>
                     <div class="card-body">
                         <a href="{{ url('/student/create') }}" class="btn btn-success btn-sm" title="Add New Student">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New

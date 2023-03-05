@@ -12,11 +12,7 @@ class StudentController extends Controller
     {
         $students = Student::all();
         return view ('students.index')->with('students', $students);
-        // use Illuminate\Support\Facades\DB;
-        //$users = DB::select('select * from users where active = ?', [1]);
- 
-// return view('user.index', ['users' => $users]);
-        
+
     }
 
     
